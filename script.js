@@ -8,6 +8,7 @@ for (var i = 0; i < databaseMail.length; i++){
 }
 if(check === true) {
     alert ("Puoi giocare")
+    document.getElementById("welcome").innerHTML += "Buon divertimento"
 } else {
     alert ("mail non presente")
 }
@@ -23,4 +24,6 @@ if (randomComputer > randomUtent) {
     document.getElementById("winner").innerHTML += "Ha vinto il computer"
 } else if (randomComputer < randomUtent) {
     document.getElementById("winner").innerHTML += "Hai vinto"
+} else if (randomComputer = randomUtent) {
+    document.getElementById("winner").innerHTML += "Pareggio"
 }
