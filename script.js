@@ -12,10 +12,15 @@ if(check === true) {
     alert ("mail non presente")
 }
 if(check === true) {
-    var computer = parseInt[1,2,3,4,5,6]
-    var utent = parseInt[1,2,3,4,5,6]
+    var computer = [1,2,3,4,5,6]
+    var utent = [1,2,3,4,5,6]
     var randomComputer = computer[Math.floor(Math.random()*computer.length)]
     var randomUtent = utent[Math.floor(Math.random()*utent.length)]
     document.getElementById("computer").innerHTML += randomComputer
     document.getElementById("utent").innerHTML += randomUtent
+}
+if (randomComputer > randomUtent) {
+    document.getElementById("winner").innerHTML += "Ha vinto il computer"
+} else if (randomComputer < randomUtent) {
+    document.getElementById("winner").innerHTML += "Hai vinto"
 }
